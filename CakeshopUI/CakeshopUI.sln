@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CakeshopUI", "src\CakeshopUI\CakeshopUI.xproj", "{ABB63A31-17A4-4064-9AAE-57719C3F167A}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CakeShopData", "CakeShopData\CakeShopData.xproj", "{E66268C4-43C1-4238-919A-302AE60DAD6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{ABB63A31-17A4-4064-9AAE-57719C3F167A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABB63A31-17A4-4064-9AAE-57719C3F167A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABB63A31-17A4-4064-9AAE-57719C3F167A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66268C4-43C1-4238-919A-302AE60DAD6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66268C4-43C1-4238-919A-302AE60DAD6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66268C4-43C1-4238-919A-302AE60DAD6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66268C4-43C1-4238-919A-302AE60DAD6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ABB63A31-17A4-4064-9AAE-57719C3F167A} = {10427EEC-2CE1-40DC-B8DE-834383B91446}
+		{E66268C4-43C1-4238-919A-302AE60DAD6F} = {10427EEC-2CE1-40DC-B8DE-834383B91446}
 	EndGlobalSection
 EndGlobal
