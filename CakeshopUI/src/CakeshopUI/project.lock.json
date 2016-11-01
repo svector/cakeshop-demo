@@ -54,6 +54,40 @@
           "lib/net45/Castle.Windsor.dll": {}
         }
       },
+      "Castle.Windsor.MsDependencyInjection/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Windsor": "3.3.0",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0"
+        },
+        "compile": {
+          "lib/net461/Castle.Windsor.MsDependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Castle.Windsor.MsDependencyInjection.dll": {}
+        }
+      },
+      "FluentNHibernate/2.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NHibernate": "4.0.0"
+        },
+        "compile": {
+          "lib/net40/FluentNHibernate.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FluentNHibernate.dll": {}
+        }
+      },
+      "Iesi.Collections/4.0.0.4000": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Iesi.Collections.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Iesi.Collections.dll": {}
+        }
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -1132,6 +1166,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "MySql.Data/6.9.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
       "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
@@ -1139,6 +1182,18 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NHibernate/4.0.4.4000": {
+        "type": "package",
+        "dependencies": {
+          "Iesi.Collections": "[4.0.0, 5.0.0)"
+        },
+        "compile": {
+          "lib/net40/NHibernate.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NHibernate.dll": {}
         }
       },
       "Serilog/2.3.0": {
@@ -1850,6 +1905,24 @@
         "runtime": {
           "lib/net46/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "CakeShopData/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Castle.Core-Serilog": "3.3.3",
+          "Castle.LoggingFacility": "3.3.0",
+          "Castle.Windsor": "3.3.0",
+          "Castle.Windsor.MsDependencyInjection": "1.1.0",
+          "FluentNHibernate": "2.0.3",
+          "NHibernate": "4.0.4.4000"
+        },
+        "compile": {
+          "net461/CakeShopData.dll": {}
+        },
+        "runtime": {
+          "net461/CakeShopData.dll": {}
+        }
       }
     }
   },
@@ -1942,6 +2015,40 @@
         "lib/sl5/Castle.Windsor.dll",
         "lib/sl5/Castle.Windsor.xml",
         "readme.txt"
+      ]
+    },
+    "Castle.Windsor.MsDependencyInjection/1.1.0": {
+      "sha512": "GHd0FdYyzZCLt78nMwwffAmo78n1yR15SWOZ2UbFna9cy+OI0J/4sF9iC7uQhvJiqQl5wWfY8ArlBBlIz79wyQ==",
+      "type": "package",
+      "path": "Castle.Windsor.MsDependencyInjection/1.1.0",
+      "files": [
+        "Castle.Windsor.MsDependencyInjection.1.1.0.nupkg.sha512",
+        "Castle.Windsor.MsDependencyInjection.nuspec",
+        "lib/net452/Castle.Windsor.MsDependencyInjection.dll",
+        "lib/net461/Castle.Windsor.MsDependencyInjection.dll"
+      ]
+    },
+    "FluentNHibernate/2.0.3": {
+      "sha512": "qlnjj/a2ClTVWLw0uESCBsmd5r+LaeNXoaUiVyeGzpXmqTs/mfcgZP+GO63xp3VTq4ydNBHKBuWMFMndW/uzOQ==",
+      "type": "package",
+      "path": "FluentNHibernate/2.0.3",
+      "files": [
+        "FluentNHibernate.2.0.3.nupkg.sha512",
+        "FluentNHibernate.nuspec",
+        "lib/net40/FluentNHibernate.XML",
+        "lib/net40/FluentNHibernate.dll",
+        "lib/net40/FluentNHibernate.pdb"
+      ]
+    },
+    "Iesi.Collections/4.0.0.4000": {
+      "sha512": "fLQKwZovMOhjte47Op+2YWLpmncQ/siA7hOdmG2eBLTFjp81s+gGkkGnDetOhBqYnmWK8g2kyx1DP9uNaJ68Ew==",
+      "type": "package",
+      "path": "Iesi.Collections/4.0.0.4000",
+      "files": [
+        "Iesi.Collections.4.0.0.4000.nupkg.sha512",
+        "Iesi.Collections.nuspec",
+        "lib/net40/Iesi.Collections.dll",
+        "lib/net40/Iesi.Collections.xml"
       ]
     },
     "Libuv/1.9.0": {
@@ -2872,6 +2979,21 @@
         "runtime.json"
       ]
     },
+    "MySql.Data/6.9.9": {
+      "sha512": "rhpv2iJBqvvHU9gkhn/OZfhanQT/jZpfovyO9TEbJl5jLKMvABgxSkIPQbubrvR04M2/ZtdTeI9fC9WSkBe2wA==",
+      "type": "package",
+      "path": "MySql.Data/6.9.9",
+      "files": [
+        "CHANGES",
+        "MySql.Data.6.9.9.nupkg.sha512",
+        "MySql.Data.nuspec",
+        "Readme.txt",
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "lib/net40/MySql.Data.dll",
+        "lib/net45/MySql.Data.dll"
+      ]
+    },
     "Newtonsoft.Json/9.0.1": {
       "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "type": "package",
@@ -2894,6 +3016,30 @@
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "NHibernate/4.0.4.4000": {
+      "sha512": "jAKwpGLeGai8KWj1e3p1K882vlZUJaQeH4RTuscKTyXhsEsiQEe2uKs9S3bY91aPyygMiPXg1CyRopi1K+e5aA==",
+      "type": "package",
+      "path": "NHibernate/4.0.4.4000",
+      "files": [
+        "ConfigurationTemplates/FireBird.cfg.xml",
+        "ConfigurationTemplates/MSSQL.cfg.xml",
+        "ConfigurationTemplates/MySql.cfg.xml",
+        "ConfigurationTemplates/Oracle.cfg.xml",
+        "ConfigurationTemplates/PostgreSQL.cfg.xml",
+        "ConfigurationTemplates/SQLite.cfg.xml",
+        "ConfigurationTemplates/SybaseASE.cfg.xml",
+        "ConfigurationTemplates/SybaseSQLAnywhere.cfg.xml",
+        "NHibernate.4.0.4.4000.nupkg.sha512",
+        "NHibernate.license.txt",
+        "NHibernate.nuspec",
+        "NHibernate.readme.html",
+        "NHibernate.releasenotes.txt",
+        "lib/net40/NHibernate.dll",
+        "lib/net40/NHibernate.xml",
+        "nhibernate-configuration.xsd",
+        "nhibernate-mapping.xsd"
       ]
     },
     "Serilog/2.3.0": {
@@ -5618,18 +5764,26 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "CakeShopData/1.0.0": {
+      "type": "project",
+      "path": "../../CakeShopData/project.json",
+      "msbuildProject": "../../CakeShopData/CakeShopData.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "CakeShopData >= 1.0.0-*",
       "Castle.Core-Serilog >= 3.3.3",
       "Castle.LoggingFacility >= 3.3.0",
       "Castle.Windsor >= 3.3.0",
+      "Castle.Windsor.MsDependencyInjection >= 1.1.0",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.1",
       "Microsoft.AspNetCore.Server.IISIntegration >= 1.0.0",
       "Microsoft.AspNetCore.Server.Kestrel >= 1.0.1",
       "Microsoft.Extensions.Logging.Console >= 1.0.0",
+      "MySql.Data >= 6.9.9",
       "Serilog >= 2.3.0",
       "Serilog.Extensions.Logging >= 1.2.0",
       "Serilog.Sinks.Loggr >= 1.5.6"

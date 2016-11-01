@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="CakeShop" namespace="CakeShopData.Model" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Cake" table="Cakes">
+    <id name="Id" type="Int32">
+      <column name="Id" not-null="true" />
+      <generator class="identity" />
+    </id>
+    <property name="Description" type="String">
+      <column name="Description" not-null="true" />
+    </property>
+    <property name="Type" type="String">
+      <column name="Type" not-null="true" />
+    </property>
+    <property name="Price" type="Decimal">
+      <column name="Price" not-null="true" />
+    </property>
+    <property name="PictureUri" type="String">
+      <column name="PictureUri" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>

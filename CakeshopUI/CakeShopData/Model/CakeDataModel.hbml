@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="CakeShop.Data" namespace="CakeShop.Data" p1:Guid="f1dc1299-3dff-411b-a7ce-c9edca094657" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Cake" table="" p1:Guid="98ad3cee-3ca8-48f6-a49d-089666f0a02b">
+    <id name="Id" type="Int32" p1:ValidateRequired="true" p1:Guid="b0f19191-996d-480f-819f-06b41e9dfd91">
+      <column name="" />
+      <generator class="identity" />
+    </id>
+    <property name="Description" type="String" p1:ValidateRequired="true" p1:Guid="500bfbe8-5182-4853-96c7-a6048b22c18a">
+      <column name="" />
+    </property>
+    <property name="Type" type="String" p1:ValidateRequired="true" p1:Guid="f9903179-d509-4517-aae3-03fd4ac1280c">
+      <column name="" />
+    </property>
+    <property name="Price" type="Decimal" p1:ValidateRequired="true" p1:Guid="46953d34-9051-42fc-99be-6bd7a4af4296">
+      <column name="" />
+    </property>
+    <property name="PictureUri" type="String" p1:ValidateRequired="true" p1:Guid="e3ff9808-9cfc-4684-978a-96113e265458">
+      <column name="" />
+    </property>
+  </class>
+</hibernate-mapping>

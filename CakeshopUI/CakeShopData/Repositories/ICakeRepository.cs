@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CakeShopData.Model;
 
 namespace CakeShopData
 {
-    public class Class1
+    public interface ICakeRepository
     {
-        public Class1()
-        {
-        }
+        IEnumerable<Cake> GetCakes();
     }
 }

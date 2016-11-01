@@ -1,10 +1,11 @@
-﻿{
+{
   "version": "1.0.0-*",
 
   "dependencies": {
     "Castle.Core-Serilog": "3.3.3",
     "Castle.LoggingFacility": "3.3.0",
     "Castle.Windsor": "3.3.0",
+    "Castle.Windsor.MsDependencyInjection": "1.1.0",
     "FluentNHibernate": "2.0.3",
     "NHibernate": "4.0.4.4000"
   },
