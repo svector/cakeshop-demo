@@ -18,8 +18,8 @@ namespace CakeshopUI.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            ViewBag.Stuff = _cakeRepository.GetCakes().Count();
-            return View();
+            var cakes = _cakeRepository.GetCakes().ToArray();
+            return View(new CakesViewModel() {Cakes = cakes });
         }
     }
 }

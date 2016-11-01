@@ -34,9 +34,9 @@ namespace CakeshopUI
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Warning()
+                .MinimumLevel.Information()
                 .Enrich.FromLogContext()
-                .WriteTo.Loggr("svector", "ec42588bba0f4a738377bfce17b9479b")
+                .WriteTo.Loggly()
                 .CreateLogger();
 
             loggerFactory.AddConsole();

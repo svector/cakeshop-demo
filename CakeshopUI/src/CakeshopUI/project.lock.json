@@ -128,6 +128,28 @@
           }
         }
       },
+      "loggly-csharp/4.6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.8",
+          "loggly-csharp-config": "4.6.0.2"
+        },
+        "compile": {
+          "lib/net45/Loggly.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Loggly.dll": {}
+        }
+      },
+      "loggly-csharp-config/4.6.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Loggly.Config.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Loggly.Config.dll": {}
+        }
+      },
       "loggr-dotnet/1.0.8": {
         "type": "package",
         "compile": {
@@ -1219,6 +1241,21 @@
           "lib/net45/Serilog.Extensions.Logging.dll": {}
         }
       },
+      "Serilog.Sinks.Loggly/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "Serilog": "2.0.0",
+          "Serilog.Sinks.PeriodicBatching": "2.0.0",
+          "loggly-csharp": "4.6.0.2"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.Loggly.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.Loggly.dll": {}
+        }
+      },
       "Serilog.Sinks.Loggr/1.5.6": {
         "type": "package",
         "dependencies": {
@@ -1230,6 +1267,18 @@
         },
         "runtime": {
           "lib/net45/Serilog.Sinks.Loggr.dll": {}
+        }
+      },
+      "Serilog.Sinks.PeriodicBatching/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.PeriodicBatching.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.PeriodicBatching.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -2067,6 +2116,32 @@
         "runtimes/win7-arm/native/libuv.dll",
         "runtimes/win7-x64/native/libuv.dll",
         "runtimes/win7-x86/native/libuv.dll"
+      ]
+    },
+    "loggly-csharp/4.6.0.2": {
+      "sha512": "khQuuzc4FYHzQVo27c50DGYsTSyaCbY2G8km8qLchitMsfafWUUOZ9YJ/aUrry/4qCo3yiq0VSengSqzsTbz1w==",
+      "type": "package",
+      "path": "loggly-csharp/4.6.0.2",
+      "files": [
+        "lib/net45/Loggly.dll",
+        "lib/net45/Loggly.pdb",
+        "lib/netstandard1.5/Loggly.dll",
+        "lib/netstandard1.5/Loggly.pdb",
+        "loggly-csharp.4.6.0.2.nupkg.sha512",
+        "loggly-csharp.nuspec"
+      ]
+    },
+    "loggly-csharp-config/4.6.0.2": {
+      "sha512": "ofkWaJVITST2atlNekqRKI2S0tv/VshbwDg1LTTpVcpR07bPQJX+50f/RObkUJHYHe8PIYzWwLPBjzDqIeKfPw==",
+      "type": "package",
+      "path": "loggly-csharp-config/4.6.0.2",
+      "files": [
+        "lib/net45/Loggly.Config.dll",
+        "lib/net45/Loggly.Config.pdb",
+        "lib/netstandard1.5/Loggly.Config.dll",
+        "lib/netstandard1.5/Loggly.Config.pdb",
+        "loggly-csharp-config.4.6.0.2.nupkg.sha512",
+        "loggly-csharp-config.nuspec"
       ]
     },
     "loggr-dotnet/1.0.8": {
@@ -3072,6 +3147,17 @@
         "lib/netstandard1.3/Serilog.Extensions.Logging.xml"
       ]
     },
+    "Serilog.Sinks.Loggly/3.0.0": {
+      "sha512": "LDMIQ00+N3mkvL8PVcmsWY26VKUp9VO/zftx0p1aQBOvvUfO9Ik5UFJRdFzTp9ByeIGI/H5HFWJGgYJ0KgHxBg==",
+      "type": "package",
+      "path": "Serilog.Sinks.Loggly/3.0.0",
+      "files": [
+        "Serilog.Sinks.Loggly.3.0.0.nupkg.sha512",
+        "Serilog.Sinks.Loggly.nuspec",
+        "lib/net45/Serilog.Sinks.Loggly.dll",
+        "lib/netstandard1.5/Serilog.Sinks.Loggly.dll"
+      ]
+    },
     "Serilog.Sinks.Loggr/1.5.6": {
       "sha512": "jc7TLESJl6w+xQ1Lrp+vw6f0i+WGASzNX5FTIFp+4PmBw3niuUW4SRUcrB9Eo5mElFuxEieBfa1NBWx4KGHROw==",
       "type": "package",
@@ -3081,6 +3167,21 @@
         "Serilog.Sinks.Loggr.nuspec",
         "lib/net45/Serilog.Sinks.Loggr.dll",
         "lib/net45/Serilog.Sinks.Loggr.xml"
+      ]
+    },
+    "Serilog.Sinks.PeriodicBatching/2.0.0": {
+      "sha512": "gfG5MaAKdGw0CFPdoXV9I0m+s5CbUxihFeiRMD/nSPzP/S8Lmop0McQhz8o1tKBU/7SkM1UOjWsBdv5LObDBOg==",
+      "type": "package",
+      "path": "Serilog.Sinks.PeriodicBatching/2.0.0",
+      "files": [
+        "Serilog.Sinks.PeriodicBatching.2.0.0.nupkg.sha512",
+        "Serilog.Sinks.PeriodicBatching.nuspec",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.3/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.3/Serilog.Sinks.PeriodicBatching.xml"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -5786,6 +5887,7 @@
       "MySql.Data >= 6.9.9",
       "Serilog >= 2.3.0",
       "Serilog.Extensions.Logging >= 1.2.0",
+      "Serilog.Sinks.Loggly >= 3.0.0",
       "Serilog.Sinks.Loggr >= 1.5.6"
     ],
     ".NETFramework,Version=v4.6.1": []

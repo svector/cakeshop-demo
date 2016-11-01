@@ -13,6 +13,7 @@
     "MySql.Data": "6.9.9",
     "Serilog": "2.3.0",
     "Serilog.Extensions.Logging": "1.2.0",
+    "Serilog.Sinks.Loggly": "3.0.0",
     "Serilog.Sinks.Loggr": "1.5.6"
   },
 

@@ -1,9 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using System.Threading.Tasks
+@model CakeshopUI.CakesViewModel
 @{
-    <div>
-        <h1>Hello World from a view</h1>
-        <p>We have @ViewBag.Stuff cakes</p>
+    <style>
+        body { font-family: arial}
+        #title { background-color: yellow; min-height: 2em; padding: 1em; font-size: x-large}
+        #footer { background-color: yellow; min-height: 2em; padding: 1em; font-size: x-small}
+        #main { margin: 1em;}
+        #results {border: 1px solid gray; width: 100%; border-radius: 15px; padding: 0.5em;}
+        #results th { text-align:left; border-bottom: 1px solid #dddddd}
+        #results td { text-align:left }
+        #results td img { max-height: 250px; max-width: 250px }
+    </style>
+    <div id="title">
+        Cake Shop
+    </div>
+    <div id="main">        
+        <p>We have @Model.Cakes.Count() cakes available</p>
+        <table id="results">
+            <tr>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Picture</th>
+            </tr>
+            @foreach (var cake in Model.Cakes)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(f => cake.Description)</td>
+                    <td>@Html.DisplayFor(f => cake.Type)</td>
+                    <td>@Html.DisplayFor(f => cake.Price)</td>
+                    <td><img src="@cake.PictureUri"/></td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div id="footer">
+        © Cake Shop 2016
     </div>
 }
