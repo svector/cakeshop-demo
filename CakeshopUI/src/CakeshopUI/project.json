@@ -1,21 +1,23 @@
 {
-  "dependencies": {
-    "CakeShopData": "1.0.0-*",
-    "Castle.Core-Serilog": "3.3.3",
-    "Castle.LoggingFacility": "3.3.0",
-    "Castle.Windsor": "3.3.0",
-    "Castle.Windsor.MsDependencyInjection": "1.1.0",
-    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
-    "Microsoft.AspNetCore.Mvc": "1.0.1",
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
-    "Microsoft.Extensions.Logging.Console": "1.0.0",
-    "MySql.Data": "6.9.9",
-    "Serilog": "2.3.0",
-    "Serilog.Extensions.Logging": "1.2.0",
-    "Serilog.Sinks.Loggly": "3.0.0",
-    "Serilog.Sinks.Loggr": "1.5.6"
-  },
+    "dependencies": {
+        "CakeShopData": "1.0.0-*",
+        "Castle.Core-Serilog": "3.3.3",
+        "Castle.LoggingFacility": "3.3.0",
+        "Castle.Windsor": "3.3.0",
+        "Castle.Windsor.MsDependencyInjection": "1.1.0",
+        "Microsoft.AspNetCore.Diagnostics": "1.0.0",
+        "Microsoft.AspNetCore.Mvc": "1.0.1",
+        "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+        "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+        "Microsoft.Extensions.Configuration.Json": "1.0.0",
+        "Microsoft.Extensions.Logging.Console": "1.0.0",
+        "MySql.Data": "6.9.9",
+        "Serilog": "2.3.0",
+        "Serilog.Extensions.Logging": "1.2.0",
+        "Serilog.Sinks.Loggly": "3.0.0",
+        "Serilog.Sinks.Loggr": "1.5.6"
+    },
 
   "tools": {
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"

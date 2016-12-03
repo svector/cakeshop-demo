@@ -9,6 +9,7 @@ using Castle.Windsor;
 using Castle.Windsor.MsDependencyInjection;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
+using Microsoft.Extensions.Configuration;
 using NHibernate;
 using NHibernate.Dialect;
 
@@ -19,11 +20,13 @@ namespace CakeShopData.Ioc
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
 
-            container.Register(Component.For<ISessionFactory>().UsingFactoryMethod(() =>
+            container.Register(Component.For<ISessionFactory>().UsingFactoryMethod((kernel) =>
             {
+                var config = kernel.Resolve<IConfigurationRoot>();
+
                 return Fluently.Configure()
                     .Database(MySQLConfiguration.Standard
-                        .ConnectionString(cs => cs.Server("cakeshop1.c6qlelxbuqdv.eu-west-1.rds.amazonaws.com").Database("cakeshop").Username("cakeweb").Password("cakepassword")))
+                        .ConnectionString(cs => cs.Server(config["DatabaseServer"]).Database("cakeshop").Username("cakeweb").Password("cakepassword")))
                     .Mappings(m => m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
                     .BuildSessionFactory();
 
